@@ -383,6 +383,7 @@ button:active {
     flex-direction: column;
     align-items: center;
     padding-inline: 175px;
+    padding-bottom: 180px;
 }
 .features-header{
     margin-bottom: 77px;
@@ -416,7 +417,73 @@ button:active {
     }
 }
 @media(max-width: 750px) {
+    .features-header {
+        margin-bottom: 30px;
+    }
     .features {
         row-gap: 30px;
+    }
+    .features-stction {
+        padding-bottom: 100px;
+    }
+}
+
+.pricing-container{
+    background-color: #FFF9E8;
+}
+.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    flex-wrap: wrap;
+}
+.pricing-heading {
+    margin-bottom: 70px;
+}
+.pricing-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-block: 40px;
+    padding-inline: 70px;
+    background-color: #222222;
+    border-radius: 30px;
+    box-shadow: 4px 4px 0 0 #ffd338;
+}
+.pricing-card__heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: #fff;
+}
+.pricing-card__price {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #fff;
+}
+.pricing-card__price_old {
+    color: #666;
+}
+.pricing-card__info {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #999;
+}
+@media(max-width: 750px) {
+    .pricing-heading {
+        margin-bottom: 30px;
+    }
+    .pricing-list {
+        flex-direction: column;
     }
 }
