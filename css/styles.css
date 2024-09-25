@@ -360,8 +360,11 @@ button:active {
         margin-bottom: 38px
     }
     .statistic-content-sector-3{
+        display: flex;
+        position: static;
         padding-inline: 30px;
         align-items: start;
+        flex-wrap: wrap;
     }
     .statistic-content-poster__poster {
         width: 40vh;
@@ -446,6 +449,7 @@ button:active {
     display: flex;
     justify-content: center;
     gap: 40px;
+    padding-block: 15px;
 }
 .pricing-card {
     display: flex;
@@ -486,4 +490,33 @@ button:active {
     .pricing-list {
         flex-direction: column;
     }
+}
+
+.invite-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding-top: 240px;
+    padding-inline: 210px;
+    row-gap: 25px;
+}
+@media(max-width: 1024px) {
+    .invite-section {
+        padding-top: 100px;
+        padding-inline:100px;
+    }
+    .invite-heading {
+        font-size: 30px;
+    }
+}
+@media(max-width: 750px) {
+    .invite-section {
+        padding-top: 0;
+        padding-inline:30px;
+}
+}
+@media(max-width: 550px){
+br {
+    display: none;
+  }
 }
