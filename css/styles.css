@@ -81,6 +81,13 @@ p {
     line-height: 140%;
     color: var(--color-base-two);
 }
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+a:hover {
+    opacity: 0.5;
+}
 @media(hover:hover){
 a:hover{
     transition: 0.3s;
@@ -261,6 +268,7 @@ button:active {
     }
     .video-section__heading_heading{
         font-size: 30px;
+        
     }
     .video-container{
         margin-block: 0;
@@ -272,7 +280,11 @@ button:active {
     .video-sect{
         margin-bottom: 38px;
     }
-    
+}
+@media(max-width: 527px) {
+    .video-section__heading_heading {
+        padding-inline: 30px;
+    }
 }
 
 .statistic-container{
@@ -326,7 +338,6 @@ button:active {
 }
 .statistic-content-sector-3{
     position: relative;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -500,6 +511,9 @@ button:active {
     padding-inline: 210px;
     row-gap: 25px;
 }
+.invite-info {
+    text-align: center;
+}
 @media(max-width: 1024px) {
     .invite-section {
         padding-top: 100px;
@@ -520,3 +534,57 @@ br {
     display: none;
   }
 }
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 120px;
+    padding-inline: 207px;
+    flex-wrap: wrap;
+    position: relative;
+}
+.footer-menu__list {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+}
+.footer-menu__link {
+    font-size: 16px;
+    color: #222;
+    padding-block: 10px;
+    text-decoration:none;
+}
+.footer-social {
+    position: absolute;
+    display: flex;
+    column-gap: 24px;
+    left: 50%;
+    transform: translateX(-50%); /*позиционировал во влексе по центру при условии  space-between*/
+}
+.footer-link-sute {
+
+
+}
+
+@media(max-width: 1024px) {
+    .footer-section {
+        padding-inline: 100px;
+        row-gap: 20px;
+    }
+}
+@media(max-width: 850px) {
+    .footer-social {
+        position: static;
+        order: 3;
+        align-items: center;
+    }
+    .footer-menu {
+        flex-basis: 100%;
+    }
+}
+@media(max-width: 750px) {
+    .footer-section {
+        padding-inline: 30px;
+        padding-block: 50px;
+    }}
